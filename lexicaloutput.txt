@@ -1,0 +1,84 @@
+KEYWORD: int
+ ID: main
+SPECIAL SYMBOL: (
+SPECIAL SYMBOL: )
+SPECIAL SYMBOL: {
+KEYWORD: int
+ ID: a1
+SPECIAL SYMBOL: ,
+ ID: b1
+ SPECIAL SYMBOL: ;
+ERROR (2) Charcter is not in the alphabet in line 4 : ?
+ KEYWORD: int
+ ID: sum
+ SPECIAL SYMBOL: =
+ NUM: 243e3
+ + NUM: 241
+ SPECIAL SYMBOL: ;
+COMMENT: /* comment */
+KEYWORD: while
+ SPECIAL SYMBOL: (
+ ID: x
+ SPECIAL SYMBOL: <
+ NUM: 10
+ SPECIAL SYMBOL: )
+ SPECIAL SYMBOL: {
+ KEYWORD: if
+ SPECIAL SYMBOL: (
+ ID: x
+ SPECIAL SYMBOL: ==
+ NUM: 10
+ SPECIAL SYMBOL: )
+   SPECIAL SYMBOL: {
+  ID: b1
+ SPECIAL SYMBOL: =
+ ID: b1
+ + NUM: 1
+ SPECIAL SYMBOL: ;
+  SPECIAL SYMBOL: }
+  KEYWORD: else
+   SPECIAL SYMBOL: {
+  ID: x
+ SPECIAL SYMBOL: =
+ ID: x
+ + NUM: 1
+ SPECIAL SYMBOL: ;
+  SPECIAL SYMBOL: }
+SPECIAL SYMBOL: }
+ID: for
+ SPECIAL SYMBOL: (
+ KEYWORD: int
+ ID: i
+ SPECIAL SYMBOL: =
+ NUM: 0
+ SPECIAL SYMBOL: ;
+ ID: i
+ SPECIAL SYMBOL: <
+ NUM: 10
+ SPECIAL SYMBOL: ;
+ ID: i
+ SPECIAL SYMBOL: =
+ ID: i
+ + NUM: 1
+ SPECIAL SYMBOL: )
+ SPECIAL SYMBOL: {
+  ID: sum
+ SPECIAL SYMBOL: =
+ ID: i
+ + ID: sum
+ SPECIAL SYMBOL: ;
+SPECIAL SYMBOL: }
+NUM: 12
+ID: ab
+ SPECIAL SYMBOL: ;
+ NUM: 12
+ ID: ab
+ SPECIAL SYMBOL: ;
+ID: x
+ SPECIAL SYMBOL: =
+ ERROR (4) Wrong number in line 24 : 242e+A
+ SPECIAL SYMBOL: ;
+KEYWORD: int
+ ERROR (3) Wrong identfier in line 26 : a#?
+ ERROR (1) Unclosed comment in line 27
+Total lines: 27
